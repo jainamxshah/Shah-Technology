@@ -341,9 +341,9 @@ body{
     width: 100%;
 }
 .div-11{
-    background-color: #000;
-    height: 92vh;
-    width: 100%;
+    background-color: #000 !important;
+    /* height: 92vh;
+    width: 100%; */
 }
 .div-12{
     background-color: #000;
@@ -380,10 +380,11 @@ body{
     color: var(--red);
 }
 .div-13{
-    background-color: var(--black);
+    /* background-color: var(--black); */
+    background-color: #483285;
     height: 35vh;
     width: 85%;
-    margin-left: 110px;
+    /* padding: 20% !important; */
 }
 .sub-div-13-1{
     width: 49.8%;
@@ -442,15 +443,15 @@ body{
     color: aliceblue;
     display: inline-block;
     font-size: 40px;
-    width: 372px;
-    border-right: 1px solid aliceblue;
+    /* width: 372px; */
+    /* border-right: 1px solid aliceblue; */
 }
 .div-14 img{
-    margin-top: -180px;
+    /* margin-top: -180px;
     margin-left: 400px;
     margin-right: -350px;
-    max-height: 110px;
-    width: auto;
+    max-height: 110px; */
+    height: 30% !important;
     display: inline-block;
 }
 .div-15{
