@@ -3,63 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shah Technology</title>
+    <link rel="icon" href="D:\Shah-Technology\images\WhatsApp_Image_2024-03-29_at_18.24.28_b9f568fa-removebg-removebg-preview.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
-    <div class="container-fluid div-1-try">
-        <div class="container-fluid div-2"></div>
-        <div class="container-fluid div-1-c flex-sm-wrap">
-            <p>
-                Hello there, my name is <input type="text" class="name" placeholder="Your name here">
-                <br>and i'm looking for a team to help me with
-                <input type="text" class="description" placeholder="Short project description...">
-                <br>You can reach me at
-                <input type="text" class="contact" placeholder="Your contact here">
-                <br>or
-                <input type="text" class="email" placeholder="Your email address">
-            </p>
-            <button class="btn button touch">Get In Touch</button>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="D:\Shah-Technology\images\WhatsApp_Image_2024-03-29_at_18.24.28_b9f568fa-removebg-removebg-preview.png" alt="Logo" style="width: 100px !important;"></a>
+            <button type="button" class="navbar-toggler fs-2 me-3" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="">
+            <span><i class="fa fa-bars" style="color: #E9365F"></i></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="JoinTeam.html">Career</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="Challenge.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col container-fluid pt-5 mt-5 bg-gray text-white cform text-center">
+                <form action="">
+                    <div class="form-group mt-3">
+                        <label for="name" class="form-label" style="display: inline-block;">Hello there, my name is </label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name here" style="display: inline-block;">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="project" class="form-label" style="display: inline-block;">and I'm looking for a team to help me with </label>
+                        <input type="text" class="form-control" id="project" placeholder="Short Project Description..." style="display: inline-block;">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="phone" class="form-label" style="display: inline-block;">You can reach me at </label>
+                        <input type="text" class="form-control" id="phone" placeholder="Your Contact Number" style="display: inline-block;">  
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="email" class="form-label" style="display: inline-block;">Or</label>
+                        <input type="text" class="form-control" id="email" placeholder="Your Email" style="display: inline-block;">
+                    </div>
+                    <div class="form-group mt-3 pb-5">
+                        <button type="submit" class="button" id="submit">Submit</button>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="col">
+                <div class="container mb-5 pb-4"></div>
+                <div class="map-container pt-5 mt-5 pb-5" style="height: 100%;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387347.148991954!2d-74.25908989999999!3d40.697663699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250d72d44c313%3A0x6f8a6f85942c230!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1647390912696!5m2!1sen!2sin" allowfullscreen loading="lazy" style="width: 100%; height: 80% !important;"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid div-2-c">
-        <p>Have a Question? <span>Let's Talk</span></p>
-        <div class="row div-3-c">
-            <div class="col container sub-div-3-c">
-                <p></p>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container-fluid">
+        <div class="container-fluid text-center text-white">
+            <h1>Have a <span>Question? Let's Talk!</span></h1>
+        </div>
+        <div class="row doubt text-center mt-5 pt-4 mx-auto">
+            <div class="col mx-3 py-5 bg-gray text-light-gray">
+                <h3 class="py-5" > <span><i class="fa-brands fa-skype" style="color: #e9365f;"></i></span> skype.com/jainam <span><i class="fa-solid fa-arrow-right" style="color: #e9365f;"></i></span></h3>
             </div>
-            <div class="col container sub-div-3-c">
-                <p></p>
+            <div class="col mx-3 py-5 bg-gray text-light-gray">
+                <h3 class="py-5"> <span><i class="fa-sharp fa-solid fa-phone-volume" style="color: #e9365f;"></i></span> +91 85309 93880 <span><i class="fa-solid fa-arrow-right" style="color: #e9365f;"></i></span></h1>
             </div>
-            <div class="col container sub-div-3-c">
-                <p></p>
+            <div class="col mx-3 py-5 bg-gray text-light-gray">
+                <h3 class="py-5"><span><i class="fa-solid fa-envelope" style="color: #e9365f;"></i></span> jainams471@gmail.com <span><i class="fa-solid fa-arrow-right" style="color: #e9365f;"></i></span></h1>
             </div>
         </div>
     </div>
-    <div class="container-fluid div-4-c">
-        
+    <div class="container mb-5 pb-5"></div>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 text-center" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                <div class="container mb-5 pb-5"></div>
+                <h1 class="text-white pl-3" >Interested In <span>Job opportunities?</span></h1>
+                <p class="text-light-gray " >Do you have the potential to be part of the digital transformation? We are looking for passionate and creative geeks & doers. Send us your request.</p>
+                <button class="button"><a href="Jointeam.html" style="text-decoration: none; color: inherit;">Join The Tribe</a></button>
+            </div>
+            <div class="col-md-7" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                <img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/02/Group-14455.png" alt="">
+            </div>
+        </div>
     </div>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container-fluid">
+        <div class="container-fluid text-center text-white">
+            <h1>For <span>Careers & Job Openings</span></h1>
+        </div>
+        <div class="row doubt text-center mt-5 pt-4 mx-auto">
+            <div class="col mx-3 py-5 bg-gray text-light-gray">
+                <h3 class="py-5"> <span><i class="fa-sharp fa-solid fa-phone-volume" style="color: #e9365f;"></i></span> +91 85309 93880 <span><i class="fa-solid fa-arrow-right" style="color: #e9365f;"></i></span></h1>
+            </div>
+            <div class="col mx-3 py-5 bg-gray text-light-gray">
+                <h3 class="py-5"><span><i class="fa-solid fa-envelope" style="color: #e9365f;"></i></span> jainams471@gmail.com <span><i class="fa-solid fa-arrow-right" style="color: #e9365f;"></i></span></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 pb-5"></div>
+    <div class="container mb-5 pb-5"></div>
 
-    <!-- <div class="container-fluid text-center">
-        <div class=""><p>Have a Question? <span>Let's Talk</span></p></div>
-        <div class="row border">
-            <div class="col-md-4 border"></div>
-            <div class="col-md-4 border"></div>
-            <div class="col-md-4 border"></div>
+    <!-- Footer -->
+
+    <div class="container">
+        <div class="container div-8 px-5 text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+            <div class="container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                <h1 class="text-white">Let's <span>Build The Future</span></h1>
+                <p class="text-light-gray">Have An Idea? Work With Us And See How It Goes. We Promise To Go The Extra Mile For Every Project That We Take Onboard.</p>
+                <button class="button"><a href="Challenge.html" style="text-decoration: none; color: inherit;">Challenge Us</a></button>
+            </div>
         </div>
-    </div> -->
-    <!-- <div class="container-fluid div-11">
-        <div class="container-fluid div-13">
-            <div class="container-fluid sub-div-13-1">
-                <h3>Ahmedabad Office</h3>
-                <p>
+    </div>
+    <div class="container-fluid bg-black">
+        <div class="container row bg-gray" style="margin: auto; padding: 90px;">
+            <div class="col mx-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                <h2 class="text-white">Ahmedabad Office</h2>
+                <p class="text-light-gray">
                     Vibrant Silver-1, Nr Jain Temple, Bopal, Ahmedabad
                     <br>
                     <span>jainams471@gmail.com</span>
@@ -67,9 +157,9 @@
                     +91 85309 93880
                 </p>
             </div>
-            <div class="container-fluid sub-div-13-2">
-                <h3>Ahmedabad Office</h3>
-                <p>
+            <div class="col mx-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                <h2 class="text-white">Mumbai Office</h2>
+                <p class="text-light-gray">
                     Vibrant Silver-1, Nr Jain Temple, Bopal, Ahmedabad
                     <br>
                     <span>jainams471@gmail.com</span>
@@ -78,43 +168,35 @@
                 </p>
             </div>
         </div>
-        <div class="container-fluid div-14">
-            <p>Badges That Depict <br> Our Resilience</p>
-            <ul class="nav">
-                <li class="nav-item"><img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/hubspot-design-certificate@2x.webp" loading="lazy" alt="Badge" width="200px" height="200px"></li>
-                <li class="nav-item"><img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/hubspot-inbound-certificate@2x.webp" loading="lazy" alt="Badge" width="200px" height="200px"></li>
-                <li class="nav-item"><img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/iso_v2@2x.webp" loading="lazy" alt="Badge" width="200px" height="200px"></li>
-                <li class="nav-item"><img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/laravel-certified-logo@2x.webp" loading="lazy" alt="Badge" width="200px" height="200px"></li>
-            </ul>
-        </div>
-        <div class="container-fluid div-15">
-            <div class="container-fluid logo-div"></div>
-            <div class="container-fluid footer-nav">
-                <ul class="nav">
-                    <li class="nav-item men">
-                    <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item men">
-                    <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item men">
-                    <a class="nav-link" href="#">Career</a>
-                    </li>
-                    <li class="nav-item men">
-                    <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                </ul>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 text-center pt-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                    <h2 class="text-white mx-auto" style="width: 70%;">Badges That Depict Our Resilience</h2>
+                </div>
+                <div class="col-md-2 text-center pt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                    <img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/hubspot-design-certificate@2x.webp" loading="lazy" alt="Badge" height="110px">
+                </div>
+                <div class="col-md-2 text-center pt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                    <img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/hubspot-inbound-certificate@2x.webp" loading="lazy" alt="Badge" height="110px">
+                </div>
+                <div class="col-md-2 text-center pt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                    <img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/iso_v2@2x.webp" loading="lazy" alt="Badge" height="110px">
+                </div>
+                <div class="col-md-2 text-center pt-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+                    <img src="https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/05/laravel-certified-logo@2x.webp" loading="lazy" alt="Badge" height="110px">
+                </div>
             </div>
-            <div class="container-fluid footer-social">
-                <ul class="nav">
-                    <li class="nav-item social"><a href="https://www.facebook.com/weboccult"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li class="nav-item social"><a href="https://www.instagram.com/jainamxshah/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li class="nav-item social"><a rel="noreferrer" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="nav-item social"><a rel="noreferrer" href="https://github.com/jainamxshah"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li class="nav-item social"><a rel="noreferrer" href="https://www.linkedin.com/jainamxshah"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>   
-                </ul>
-            </div>
+            
+            <div class="container pb-5"></div>
         </div>
-    </div> -->
+    </div>
+    <div class="container pt-2 pb-1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" data-aos-once="true">
+        <p class="text-light-gray">© 2024 Shah Technologies Pvt. Ltd. All Rights Reserved</p>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
