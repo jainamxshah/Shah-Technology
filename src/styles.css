@@ -1,5 +1,4 @@
 :root{
-    --purple: #483285;
     --black: #161819;
     --red: #E9365F;
     --dark-gray:#1B1E1F;
@@ -11,6 +10,7 @@ h1{
 body{
     margin: 0px;
     background-color: var(--black) !important;
+    overflow-x: hidden;
 }
 span{
     color: var(--red);
@@ -26,7 +26,7 @@ span{
 .button:hover{
     background-color: #000;
     color: var(--red);
-    transition: 0.5s ease all;
+    transition: 0.5s;
 }
 a{
     color: var(--red);
@@ -74,9 +74,11 @@ a:hover{
     width: 100%;
     border-radius: 7%;
     opacity: 0.7;
+    border: 4px solid transparent;
 }
 .div-6 img:hover{
     opacity: 1;
+    border: 4px solid var(--red);
 }
 .bg-black{
     background-color: #000;
@@ -92,10 +94,16 @@ a:hover{
 }
 .div-8{
     background-image: url("https://test4you.in/wordpress_api_demo/wp-content/uploads/2022/11/bgshort-1.webp");
+    box-shadow: 0 -5px 25px -5px var(--red),
+                    -5px 0 25px -5px var(--red),
+                    5px 0 25px -5px var(--red);
     padding: 100px;
 }
 .aboutUs-hp{
     min-height: 100vh;
+}
+.aboutUs-hp .row{
+    position: absolute;
 }
 .aboutUs-hp img{
     position: absolute;
@@ -180,7 +188,7 @@ video {
 }
 .gallery-img {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     opacity: 0.1;
 }
 .gallery-img:hover{
@@ -195,10 +203,6 @@ video {
 }
 .job-roles a{
     color: var(--red) !important;
-}
-.roles{
-    /* background-color: #E9365F; */
-    width: 100px !important;
 }
 .job-roles .nav .active{
     background-color: var(--red) !important;
@@ -224,19 +228,8 @@ video {
     border-bottom: 5px solid var(--red);
     transition: 0.5s;
 }
-#Menu {
-    display: none; /* Hide the div by default */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999; /* Ensure it's above other elements */
-}
 .cform{
-    width: 70% !important;
+    /* width: 50% !important; */
     margin-left: 0px !important;
 }
 .cform label{
@@ -244,6 +237,7 @@ video {
     word-spacing: 3px;
 }
 .cform input{
+    display: inline-block !important;
     font-size: 1.9rem;
     border: none !important;
     background-color: initial !important;
@@ -258,10 +252,74 @@ video {
     box-shadow: none !important;
 }
 .doubt{
+    width: 85% !important;
+    border-bottom: 5px solid transparent;
+}
+.doubt .col:hover{
     width: 70% !important;
+    color: var(--red) !important;
+    border-bottom: 5px solid var(--red);
 }
 .doubt .col{
-    height: 270px;
+    /* height: 270px; */
     transform: translateZ(40px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.modal-backdrop.show{
+    opacity: 0 !important;
+}
+.carousel-item img{
+    object-fit: cover !important;
+    border-radius: 10%;
+    border: 4px groove var(--red);
+}
+.carousel-control-prev{
+    margin-left: -14%;
+    color: var(--red);
+}
+.carousel-control-next{
+    margin-right: -14%;
+}
+.carousel-control-prev-icon {
+    background-color: rgba(0,0,0,0.5); /* Change the background color */
+    border-radius: 50%; /* Make it round */
+    border: 4px solid var(--red); 
+}
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5); /* Change the background color */
+    border-radius: 50%; /* Make it round */
+    border: 4px solid var(--red); 
+    opacity: 1;
+}
+.role{
+    background-color: var(--dark-gray) !important;
+    transform: translateZ(40px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    width: 150px !important;
+}
+iframe{
+    filter: grayscale(10%);
+    filter: var(--black);
+}
+.navbar{
+    background-color: var(--black) !important;
+    box-shadow: 0 5px 10px var(--red);
+}
+.navbar a{
+    color: aliceblue !important;
+}
+.navbar a:hover{
+    color: #E9365F !important;
+}
+
+.navbar-toggler {
+border: none !important;
+}
+.navbar-toggler:focus {
+outline:initial!important;
+box-shadow: none!important;
+}
+.navbar-nav .nav-item .active{
+color:#E9365F!important
 }
